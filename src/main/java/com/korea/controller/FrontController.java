@@ -12,7 +12,7 @@ import com.korea.controller.auth.LoginController;
 import com.korea.controller.auth.LogoutController;
 import com.korea.controller.member.MemberInfoController;
 import com.korea.controller.member.MemberJoinController;
-import com.korea.controller.member.MemberupdateController;
+import com.korea.controller.member.MemberUpdateController;
 
 
 public class FrontController extends HttpServlet{
@@ -26,7 +26,7 @@ public class FrontController extends HttpServlet{
 		 //회원관련
 		 list.put("/MemberJoin.do", new MemberJoinController());
 		 list.put("/MemberInfo.do", new MemberInfoController());
-		 list.put("/MemberUpdate.do", new MemberupdateController());
+		 list.put("/MemberUpdate.do", new MemberUpdateController());
 		 
 		 //인증관련
 		 list.put("/Login.do", new LoginController());
