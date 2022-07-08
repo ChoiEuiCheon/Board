@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import com.korea.dao.MemberDAO;
 import com.korea.dto.MemberDTO;
+import com.korea.service.MemberService;
 
 public class DaoTest {
 
@@ -33,19 +34,20 @@ public class DaoTest {
 //		
 //	}
 	
-	@Test
-	public void Test3() {
-		MemberDTO dto = new MemberDTO();
-		dto.setEmail("test1@naver.com");
-		dto.setPwd("0987");
-		dto.setAddr1("서울특별시");
-		dto.setAddr2("00구 00동");
-		
-		MemberDAO dao = MemberDAO.getInstance();
-		dao.Update(dto);
-		
-		
-	}
+//	@Test
+//	public void Test3() {
+//		MemberDTO dto = new MemberDTO();
+//		dto.setEmail("test1@naver.com");
+//		dto.setPwd("0987");
+//		dto.setAddr1("서울특별시");
+//		dto.setAddr2("00구 00동");
+//		
+//		MemberDAO dao = MemberDAO.getInstance();
+//		dao.Update(dto);	
+//	}
+	
+
+	
 
 }
 
