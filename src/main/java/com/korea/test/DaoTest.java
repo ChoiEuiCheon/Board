@@ -1,10 +1,11 @@
 package com.korea.test;
 
+import java.util.List;
+
 import org.junit.Test;
 
-import com.korea.dao.MemberDAO;
-import com.korea.dto.MemberDTO;
-import com.korea.service.MemberService;
+import com.korea.dao.BoardDAO;
+import com.korea.dto.BoardDTO;
 
 public class DaoTest {
 
@@ -48,6 +49,32 @@ public class DaoTest {
 	
 
 	
+//	@Test
+//	public void Test4()
+//	{
+//		BoardDAO dao = BoardDAO.getInstance();
+//		
+//		List<BoardDTO> list =dao.Select(5, 20);
+//		
+//		//list.forEach(dto -> System.out.println(dto));
+//		for(int i=0;i<list.size();i++)
+//		{
+//			System.out.println(list.get(i));	
+//		}
+//		
+//		
+//	}
+	
+	@Test
+	public void Test5()
+	{
+		BoardDAO dao = BoardDAO.getInstance();
+		int result = dao.getTotalCount();
+		System.out.println("게시물 건수 : " + result);
+		
+		
+	}
+
 
 }
 
