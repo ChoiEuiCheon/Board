@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<%@include file="resources/includes/link.jsp" %>
-<link rel="stylesheet" href="resources/css/common.css" >
+<%@include file="/resources/includes/link.jsp" %>
+<link rel="stylesheet" href="/resources/css/common.css" >
 
 </head>
 <body>

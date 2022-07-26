@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 
 <%@include file="/resources/includes/link.jsp" %>
-<link rel="stylesheet" href="resources/css/common.css" >
+<link rel="stylesheet" href="/resources/css/common.css" >
 
 </head>
 <body>
@@ -54,11 +54,12 @@
 			
 			<%
 				//상단의 현재 페이지 번호 변경 위한 처리
-				if(request.getAttribute("nowPage")!=null)
-					nowPage=
-					Integer.parseInt(
-					(String)request.getAttribute("nowPage")
-					);
+	 			if(!request.getParameter("nowPage").equals("null"))
+				{
+					nowPage =Integer.parseInt(request.getParameter("nowPage"));
+					
+					
+				} 
 				 
 			%>
 			
@@ -133,6 +134,7 @@
 				<input type="hidden" name="start"> 	<!-- DB로부터 읽을 시작 번호 -->
 				<input type="hidden" name="end">	<!-- DB로부터 읽을 끝 번호 -->
 				<input type="hidden" name="nowPage"><!-- 현재 페이지 번호 -->
+				<input type="hidden" name="init" value="true">
 			</form>
 			
 			

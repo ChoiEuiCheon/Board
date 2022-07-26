@@ -5,8 +5,18 @@ public class MemberDTO {
 	private String pwd;
 	private String addr1;
 	private String addr2;
+	private String zipcode;
 	private int grade; //일반 : 1/관리자 : 2 /익명 : 0 
 	
+	
+	public String getZipcode() {
+		return zipcode;
+	}
+
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
+
 	public MemberDTO() {
 		grade=1;
 	}
